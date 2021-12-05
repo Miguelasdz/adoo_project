@@ -1,0 +1,96 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pagina {
+    overflow: hidden;
+}
+
+
+
+
+.imagen {
+    text-align: center;
+    height: 300px;
+    padding: 12px;
+    background-image: url(../img/verde2.jpg);
+    position: relative;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    margin-top: 30px;
+    background-color: rgb(18, 74, 107);
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+}
+
+
+.nombre-libreria {
+    font-size: 50px;
+    margin-top: 120px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.bibliotecas {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+    color: rgb(29, 111, 136);
+}
+
+a:hover {
+    color: rgb(28, 168, 91);
+}
+
+
+.lugares {
+    padding: 10px;
+    font-size: 20px;
+    float: left;
+}
+
+.lugares h3, .libros h3 {
+    color: rgb(26, 99, 182);
+}
+
+
+.lugares p {
+    font-size: 15px;
+}
+
+.contenedor {
+    display: flex;
+}
+
+.img {
+    display: flex;
+    height: 15rem;
+    width: 30rem;
+}
+
+.foto__libreria {
+    height: 400px;
+    margin-top: 150px;
+    margin-left: 150px;
+    border-radius: 20px;
+    filter: drop-shadow(0 5px 20px rgba(0, 0, 0, 0.7));
+}
+

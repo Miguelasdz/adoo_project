@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0"">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/stylelogin.css">
+  <title>Iniciar Sesión</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS -->
+  <link href="css/landing-page.css" rel="stylesheet">
+
+  <!-- Fuentes -->
+  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="container topnav">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand topnav" href="#"></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/">Inicio</a>
+                    </li>
+                    <li>
+                    
+                    <li>
+                        <a href="#contacto">Contacto</a>
+                    </li>
+                    <li>
+                        <a href="register">Registrarse</a>
+                    </li>
+                    <li>
+                        <a href="login">Iniciar Sesión</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+   
+    <form class="formulario" action="auth" method="POST">
+    
+      <h1>Ingresar a Book's</h1>
+       <div class="contenedor">
+       
+       
+           
+           <div class="input-contenedor">
+           <i class="fas fa-envelope icon"></i>
+           <input type="text" name="user" placeholder="Usuario" autofocus required>
+           
+           </div>
+           
+           <div class="input-contenedor">
+          <i class="fas fa-key icon"></i>
+          <input type="password" name="pass" placeholder="Contraseña" required>
+           
+           </div>
+           <input type="submit" value="Iniciar Sesión" class="button">
+           
+           <p>¿No se ha registrado? <a class="link" href="register">¡De click aquí para crear una cuenta!</a></p>
+       </div>
+      </form>
+    
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+   <% if (typeof alert != "undefined")  { %>
+    <script>
+    Swal.fire({
+      title:'<%= alertTitle %>',
+      text:'<%= alertMessage %>',
+      icon:'<%= alertIcon %>',
+      showConfirmButton: <%= showConfirmButton %>,
+      timer: <%= timer %>
+    }).then(()=>{
+      window.location='/<%= ruta %>'
+    })
+    </script>
+  <% } %> 
+  </div>
+  
+</body>
+</html>

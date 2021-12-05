@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Usuario</title>
+    <link href="css/user.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="preload" as="styles" />
+    <link rel="preload" href="css/user.css" as="styles" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="imagen">
+      <img class="avatar" src="img/avi1.png" id="imagen" />
+      <h1 class="nombre-usuario">"req.session.name"</h1>
+      <div class="contenedor">
+         <button onclick="changeImage()" type="button" class="atras botones"> 
+          Cambiar Avatar
+        </button>
+        <button onclick="changeImage()" type="button" class="adelante botones">
+          Cambiar Avatar
+        </button>
+      </div>
+    </div>
+
+    <div class="social">
+      <p>Redes Sociales:</p>
+    </div>
+
+    <ul class="redes">
+      <li>
+        <i class="icono correo"></i>
+        <a href="mailto:kronosgrc@hotmail.com">kronosgrc@hotmail.com</a>
+      </li>
+
+      <li>
+        <i class="icono face"></i>
+        <a href="https://facebook.com/Josue.LC">Josue LC</a>
+      </li>
+
+      <li>
+        <i class="icono insta"></i>
+        <a href="https://instagram.com">Josue LC</a>
+      </li>
+    </ul>
+
+    <div class="buscar">
+      <a class="boton" href="librerias.html">Consulta las librerías!</a>
+    </div>
+
+    <div class="acerca">
+      <h3>Acerca de</h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+        tincidunt interdum luctus. Curabitur convallis dapibus finibus. Duis sit
+        amet ex facilisis, mattis enim necdajkshsadkh, fringilla ante. Aenean vitae orci
+        tortor. Phasellus tincidunt mattis sapien. Maecenas malesuada convallis
+        lacinia. Nullam tincidunt vulputate nisi, in dictum diam vulputate sed.
+        Etiam eleifend ultrices massa, eget semper libero. Cras ut ante neque.
+        Integer a magna hendrerit, pulvinar tortor sit amet, feugiat nunc. Nam
+        id vestibulum urna. Interdum et malesuada fames ac ante ipsum primis in
+        faucibus. Curabitur laoreet vel dolor non eleifend. In convallis dolor
+        non eros imperdiet pharetra. Cras tortor est, lobortis in blandit eget,
+        elementum quis odio.
+      </p>
+    </div>
+
+    <div class="libros">
+      <h3>Libros leidos:</h3>
+    </div>
+
+    <script src="js/avatares.js"></script>
+  </body>
+</html>

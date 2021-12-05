@@ -1,0 +1,109 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.imagen {
+    text-align: center;
+    height: 300px;
+    padding: 12px;
+    background-image: url(../img/fondo-user.jpg);
+    background-repeat: no-repeat;
+    max-width: 100%;
+}
+
+
+
+
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+.nombre-usuario {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.redes {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+}
+
+.redes li {
+    display: inline-block;
+    margin: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(29, 111, 136);
+}
+
+a:hover {
+    color: rgb(17, 12, 78);
+}
+
+.icono {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    background-size: cover; 
+}
+
+.insta {
+    background-image: url(../img/insta.png);
+}
+
+.face {
+    background-image: url(../img/facebook.png);
+}
+
+.correo {
+    background-image: url(../img/correo.png);
+}
+
+
+.acerca {
+    padding: 10px;
+}
+
+.acerca h3, .libros h3 {
+    color: rgb(26, 99, 182);
+}
+
+
+.acerca p {
+    font-size: 15px;
+}
+
+
+.social {
+    text-align: center;
+}
+
+.buscar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    background-color: rgb(55, 185, 94);
+    border-radius: 20px;
+    padding: 15px 20px;
+    color: rgb(255, 255, 255);
+}
+
+.boton:hover {
+    color: rgb(26, 99, 182);;
+}
