@@ -2,6 +2,7 @@
 const express = require('express');
 const app = express();
 
+
 //2 - Para poder capturar los datos del formulario (sin urlencoded nos devuelve "undefined")
 app.use(express.urlencoded({extended:false}));
 app.use(express.json());//además le decimos a express que vamos a usar json
@@ -45,7 +46,31 @@ app.get('/contacto',(req, res)=>{
     res.render('contacto');
 })
 
+app.post('/search',function(req,res){
+	
+    var str = {
+        stringPart:req.body.typeahead
+    }
 
+    connection.query('SELECT * FROM libro WHERE titulo LIKE "%'+str.stringPart+'%"',function(err, rows, fields) {
+        if (err) throw err;
+        var data=[];
+        for(i=0;i<rows.length;i++)
+        {
+			data.push('titulo');
+            data.push(rows[i].titulo);
+
+			data.push('biblioteca');
+			data.push(rows[i].biblioteca);
+			
+			data.push('cantidad');
+			data.push(rows[i].cantidad);
+			
+        }
+        res.send('Siguientes titulos disponible en ' + JSON.stringify(data));
+
+    });
+});
 
 
 
@@ -167,4 +192,3 @@ app.listen(3000, (req, res)=>{
     console.log('server up in http://localhost:3000');
 })
 //12 - Método para controlar que está auth en todas las páginas
-
